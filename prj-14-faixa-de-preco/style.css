@@ -25,8 +25,7 @@ form {
     border-radius: 5px;
 }
 
-h1, h2, p {
-    margin-top: 15px;
+h1 {
     margin-bottom: 20px;
     margin-left: 20px;
     color: #FFFFff;
@@ -34,8 +33,6 @@ h1, h2, p {
 }
 
 input{
-    display: flex;
-    flex-direction: column;
     width: 290px;
     padding: 10px;
     color: black;
@@ -55,16 +52,17 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 }
 
 .enviar {
-    /* display: flex; */
+    display: flex;
     background-color: #FFFFff;
     height: 40px;
-    width: 180px;
+    width: 100px;
     font-weight: bold;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     justify-content: center;
     border: 1px solid;
     color: black;
-    padding: 10px;
 }
 
 /* textarea {

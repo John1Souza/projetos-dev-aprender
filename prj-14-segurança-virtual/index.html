@@ -7,26 +7,31 @@
     <link href="style.css" rel="stylesheet" media="all" />
     <link rel="stylesheet" href="style.css">
     <script src="./app.js"></script>
-    <title>--Projeto 1--</title>
+    <title>--Projeto 15--</title>
 </head>
 
 <body>
     <form name="meu_form">
 
-        <h1>Maximo entre 2 valores</h1>
+        <h1>Festa VIP</h1>
 
-        <input type="text" id="nomeid" placeholder="Digite o primeiro valor" required="required" name="nome" />
-        <label for="nome">Valor 1</label>
+        <h2>Bem vindo a festa senhor(a):</h2>
 
-        <input type="text" id="foneid" placeholder="Digite o segundo valor" name="fone" />
-        <label for="fone">Valor 2</label>
+        <input type="text" id="nome1" placeholder="Digite seu nome" required="required" name="nome" />
+        <label for="nome">Seu nome</label>
+
+        <input type="text" id="nome2" placeholder="Digite o nome de quem convidou você" name="fone" />
+        <label for="fone">Nome de quem convidou você.</label>
 
         <!-- <input type="text" id="emailid" placeholder="fulano@mail.com" name="email" />
         <label for="email">Email</label>
 
         <textarea placeholder="Deixe sua opnião"></textarea> -->
 
-        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+        <input type="submit" class="enviar" onclick="Enviar(); return false" value="Verificar se posso entrar" />
+
+        <h1>Você está permitido a entrar?</h1>
+        <p id="permissao">Pesquisando...</p>
     </form>
 </body>
 </html>
