@@ -1,15 +1,27 @@
 function Enviar() {
 
-    var nota1 = document.getElementById("nomeid").value;
-    var nota2 = document.getElementById("foneid").value;
-    // var nota3 = document.getElementById("emailid").value;
+    var val = document.getElementById("var").value;
+    var valor = parseInt(val);
 
-    var total = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3)) / 3;
-    if(total >  5 ) {
-        alert('Passoy com media: ' + Math.floor(total) + ' Parabens');
-    }else {
-        alert('Voce é burro: ' + total + ' Estude mais');
+    var cont = 1;
+    var asterisco = '';
 
+    while(cont <= valor){            
+        asterisco += '*';
+        alert(asterisco);
+        cont++;
     }
 
 }
+
+// var valor = 10;
+
+// var cont = 0;
+// var asterisco = '*';
+
+// while(cont <= valor){  
+//     console.log(asterisco);  
+//     asterisco += '*';
+//     cont++;
+// }
+

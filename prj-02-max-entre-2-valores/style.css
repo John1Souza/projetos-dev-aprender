@@ -31,6 +31,12 @@ h1 {
     color: #FFFFff;
     text-shadow: 5px 5px 5px black;
 }
+h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #FFFFff;
+    text-shadow: 5px 5px 5px black;
+}
 
 input{
     display: flex;

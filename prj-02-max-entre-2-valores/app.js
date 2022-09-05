@@ -5,11 +5,18 @@ function Enviar() {
     // var nota3 = document.getElementById("emailid").value;
 
     // var media = (parseInt(valor1) + parseInt(valor2)) / 2;
-    if(valor1 > valor2 ) {
-        alert(`O maior valor entre ${valor1} e ${valor2} é o valor ${valor1}`);
-    }else {
-        alert(`O maior valor entre ${valor1} e ${valor2} é o valor ${valor2}`);
-
+    if(valor1 < 0 || valor2 < 0 ){
+        alert('Valor incorreto detectado')
+    }else{
+        if(valor1 > valor2 ) {
+            alert(`O maior valor entre ${valor1} e ${valor2} é o valor ${valor1}`);
+        }else {
+            alert(`O maior valor entre ${valor1} e ${valor2} é o valor ${valor2}`);
+    
+        }
     }
+    
+    
+    
 
 }

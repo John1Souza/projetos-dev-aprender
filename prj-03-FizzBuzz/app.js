@@ -2,13 +2,18 @@ function Enviar() {
 
     var valor = document.getElementById("var1").value;
 
-    if(valor % 3 === 0 && valor % 5 != 0){
-        alert(`Você digitou o valor ${valor}, este é divisivel por 3`);
-    }else if(valor % 5 === 0 && valor % 3 != 0){
-        alert(`Você digitou o valor ${valor}, este é divisivel por 5`);
-    }else if(valor % 5 === 0 && valor % 3 == 0){
-        alert(`Você digitou o valor ${valor}, este é divisivel por 5 e por 3`);
+    if(valor < 0){
+        alert('Valor incorreto detectado')
+    }else{
+        if(valor % 3 === 0 && valor % 5 != 0){
+            alert(`Você digitou o valor ${valor}, este é divisivel por 3`);
+        }else if(valor % 5 === 0 && valor % 3 != 0){
+            alert(`Você digitou o valor ${valor}, este é divisivel por 5`);
+        }else if(valor % 5 === 0 && valor % 3 == 0){
+            alert(`Você digitou o valor ${valor}, este é divisivel por 5 e por 3`);
+        }
     }
+    
 
 
 
