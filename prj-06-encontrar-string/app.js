@@ -8,18 +8,22 @@ function Enviar() {
 
     
     // var titulo = 'johnatas';
-    // var ano = 2018;
+    var ano1 = parseInt(ano);
     // var diretor = 'johnatas';
     // var personagem = 'johnatas';
 
-    let valores = [titulo, ano, diretor, personagem];
+    const valores = {
+        'Titulo': titulo, 
+        'Ano': ano1, 
+        'Diretor': diretor, 
+        'Personagem': personagem
+    };
 
-    var cont = 0;
-    while(cont <= valores.length){
-        if(typeof valores[cont] === 'string'){
-            alert(typeof valores[cont]);
-        }   
-        cont++;
+    for(var indice in valores){
+        if( typeof valores[indice] === 'string'){
+            alert(`${indice}: ${valores[indice]}`);
+        }
+        
     }
     
 
